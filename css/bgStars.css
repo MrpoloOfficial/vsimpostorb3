@@ -24,3 +24,18 @@
 #BgStars2 {
     background-position-y: 50px;
 }
+
+@media (max-width: 768px)
+{
+    .BgStarLayer {
+        height: 125%;
+    }
+    
+    #BgStars1 {
+        animation-duration: var(--star-speed-smaller);
+    }
+    
+    #BgStars2 {
+        animation-duration: var(--star-speed-smaller);
+    }
+}
