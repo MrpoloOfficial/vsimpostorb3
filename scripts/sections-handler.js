@@ -16,11 +16,12 @@ function update(id)
     if(document.activeElement)
         document.activeElement.blur();
 
+    // Why do you hate me?
     setTimeout(function() {
         window.scrollTo({
             top: 0,
             left: 0,
-            behavior: 'smooth'
+            behavior: 'instant'
         });
     }, 1);
 }
