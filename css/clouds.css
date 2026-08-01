@@ -74,4 +74,17 @@
     .cloud-track {
         animation: scrollLeft 16s linear infinite;
     }
+
+    .cloud {
+        width: 86vw;
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 480px) {
+    .cloud {
+        width: 110vw;
+        opacity: 0.8;
+        filter: blur(4px);
+    }
 }

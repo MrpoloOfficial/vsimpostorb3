@@ -79,4 +79,19 @@ a:hover {
     .text-title {
         font-size: calc(var(--text-font-size) + 8px);
     }
+
+    .text-description {
+        font-size: calc(var(--text-font-size) - 6px);
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-large {
+        font-size: calc(var(--text-font-size) + 20px);
+    }
+
+    .text-title {
+        font-size: calc(var(--text-font-size) + 4px);
+    }
 }

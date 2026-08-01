@@ -43,6 +43,10 @@
 }
 
 @media (max-width: 768px) {
+    .box {
+        padding: 1.25rem;
+    }
+
     .box-content {
         flex-direction: column;
         align-items: stretch;
@@ -54,7 +58,8 @@
     
     .box-content img {
         flex: 0 1 auto;
-        max-height: 400px;
+        max-height: 320px;
+        width: auto;
         align-self: center;
     }
 
