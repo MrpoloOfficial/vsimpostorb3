@@ -19,11 +19,11 @@
 
 .box-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 100%;
 }
 
@@ -32,14 +32,17 @@
 }
 
 .box-content > div {
-    flex: 1 1 300px;
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .box-content img {
-    flex: 0 1 400px;
-    max-width: 100%;
-    height: auto;
-    max-height: 450px;
+    flex: 0 0 auto;
+    height: 400px;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -50,6 +53,7 @@
     .box-content {
         flex-direction: column;
         align-items: stretch;
+        flex-wrap: wrap;
     }
     
     .box-content > div {
@@ -59,7 +63,8 @@
     .box-content img {
         flex: 0 1 auto;
         max-height: 320px;
-        width: auto;
+        width: min(100%, 280px);
+        max-width: 100%;
         align-self: center;
     }
 
