@@ -68,3 +68,10 @@
     left: 150vw;
     transform: translateX(-50%);
 }
+
+@media (max-width: 768px)
+{
+    .cloud-track {
+        animation: scrollLeft 16s linear infinite;
+    }
+}
