@@ -41,6 +41,7 @@
 
 .box-content img {
     flex: 0 0 auto;
+    width: auto;
     height: 400px;
     object-fit: contain;
 }
