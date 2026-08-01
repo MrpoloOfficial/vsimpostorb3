@@ -1,0 +1,70 @@
+:root {
+    --cloud-speed: 30s;
+}
+
+.cloud-scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+.cloud-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: scrollLeft var(--cloud-speed) linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.cloud {
+    position: absolute;
+    width: 62vw;
+    display: block;
+    opacity: 1;
+    z-index: -1;
+    filter: blur(6px);
+}
+
+#cloud-1 {
+    bottom: -15%;
+    left: -25vw;
+}
+
+#cloud-2 {
+    bottom: -20%;
+    left: 68vw;
+}
+
+#cloud-3 {
+    bottom: -10%;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+#cloud-4 {
+    bottom: -15%;
+    left: 75vw;
+}
+
+#cloud-5 {
+    bottom: -20%;
+    left: 168vw;
+}
+
+#cloud-6 {
+    bottom: -10%;
+    left: 150vw;
+    transform: translateX(-50%);
+}

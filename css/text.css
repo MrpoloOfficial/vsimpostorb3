@@ -1,0 +1,82 @@
+/* Text stuff */
+
+p {
+    margin-block: 0px;
+    max-width: var(--max-site-width);
+}
+
+.text-large {
+    font-size: calc(var(--text-font-size) + 32px);
+    color: var(--main-text-color);
+}
+
+.text-highlight {
+    font-family: 'Trebuchet MS';
+    font-size: calc(var(--text-font-size) - 4px);
+    color: #50acbd;
+    letter-spacing: 2px;
+}
+
+.text-normal {
+    font-size: var(--text-font-size);
+    color: var(--main-text-color);
+}
+
+.text-title {
+    font-size: calc(var(--text-font-size) + 16px);
+    color: var(--main-text-color);
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-block: 0px;
+}
+
+.text-description {
+    font-size: calc(var(--text-font-size) - 4px);
+    line-height: 1.6;
+    color: #a3a3a3;
+}
+
+.text-smallest {
+    font-size: calc(var(--text-font-size) - 10px);
+    text-transform: uppercase;
+    font-family: 'Noto Sans';
+    line-height: 1.8;
+    color: var(--main-text-color);
+}
+
+.text-credit-title {
+    font-size: calc(var(--text-font-size) + 10px);
+    font-family: 'Space Mono Bold';
+}
+
+.text-credit-role {
+    font-size: calc(var(--text-font-size) + 4px);
+    padding-top: 16px;
+    line-height: 1;
+    font-family: 'Space Mono Bold';
+}
+
+.text-credit-person {
+    font-size: var(--text-font-size);
+    font-family: var(--text-font-family);
+    line-height: 1.6;
+}
+
+.text-creator {
+    font-family: 'Trebuchet MS';
+    font-size: calc(var(--text-font-size) - 6px);
+    letter-spacing: 2px;
+    text-align: center;
+    color: #cfcfcf;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px)
+{
+    .text-title {
+        font-size: calc(var(--text-font-size) + 8px);
+    }
+}
