@@ -70,8 +70,12 @@ p {
     color: #cfcfcf;
 }
 
-a:hover {
+a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration:underline;
 }
 
 @media (max-width: 768px)

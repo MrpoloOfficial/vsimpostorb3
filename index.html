@@ -58,9 +58,26 @@
 
     <br><br>
 
-    <section></section>
+    <section data-section="404">
+        <div class="scaledDiv">
+            <p class="text-large" style="color: red;">ERROR 404!</p>
+            <p class="text-normal">PAGE NOT FOUND</p>
+            <br>
+            <img src="assets/images/gifs/brown-wip.gif" class="brown" alt="Brown Walker WIP" >
+            <p class="text-normal" style="text-align: center;">
+                <span style="font-weight: bolder;">OOPS!</span> you seem to be a bit lost, aren't you?
+                <br>
+                Click the button below or use the buttons above to head back to existing pages!
+            </p>
+            <br>
+            <div style="text-align: center;">
+                <a href="#home" onclick="goHome();" class="button">Back to Home</a>
+            </div>
+        </div>
+        <br>
+    </section>
 
-    <section id="home">
+    <section data-section="home">
         <div class="main">
             <div class="box">
                 <div class="box-content">
@@ -87,7 +104,7 @@
         </div>
     </section>
 
-    <section id="downloads">
+    <section data-section="downloads">
         <div class="scaledDiv">
             <p class="text-large">
                 DOWNLOADS...?
@@ -97,7 +114,7 @@
             <p class="text-normal" style="text-align: center;">
                 Builds will be available here soon.
                 <br>
-                Check out our socials for new updates and information about the mod.
+                Check out our <a href="https://x.com/B3Impostor" style="color: cornflowerblue;">Twitter/X</a> for new updates and information about the mod.
                 <br>
                 Stay tuned!
             </p>
@@ -105,7 +122,7 @@
         <br>
     </section>
 
-    <section id="characters">
+    <section data-section="characters">
         <div class="main">
 
             <div class="content-flex">
@@ -190,7 +207,7 @@
         <br>
     </section>
 
-    <section id="credits">
+    <section data-section="credits">
         <div class="main">
             <div class="box content-center">
                 <p class="text-highlight" style="text-align: center;">WHAT IS HIGHTIDE?</p>
@@ -263,7 +280,7 @@
         </div>
     </section>
 
-    <section id="devlog">
+    <section data-section="devlog">
         <div class="main">
             <div class="scaledDiv">
                 <p class="text-large" style="text-align: center;">
@@ -274,7 +291,7 @@
                 <p class="text-normal" style="text-align: center;">
                     Progress updates on the mod and new information on many other things will be added here soon!
                     <br>
-                    Check out our socials for new updates and information about the mod.
+                    But for now, check out our <a href="https://x.com/B3Impostor" style="color: cornflowerblue;">Twitter/X</a> for that kinda stuff!
                     <br>
                     Stay tuned!
                 </p>
@@ -305,8 +322,6 @@
 
     <script src="scripts/bgStars-handler.js"></script>
     <script src="scripts/sections-handler.js"></script>
-
-    <br><br>
 </body>
 
 </html>

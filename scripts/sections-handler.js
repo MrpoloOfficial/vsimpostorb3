@@ -5,25 +5,20 @@ var links = document.querySelectorAll('a[href^="#"]');
 
 function update(id)
 {
-    var target = document.getElementById(id) || document.getElementById('home');
+    var target = document.querySelector('section[data-section="' + (id || 'home') + '"]')
+        || document.querySelector('section[data-section="home"]');
 
     sections.forEach(s => s.classList.toggle('active', s === target));
-    links.forEach(l => l.classList.toggle('active', l.hash === '#' + id));
+    links.forEach(l => l.classList.toggle('active', l.hash === '#' + (id || 'home')));
 
-    if(location.hash !== '#' + id) 
-        history.pushState(null, '', '#' + id);
+    if(location.hash !== '#' + (id || 'home')) 
+        history.pushState(null, '', '#' + (id || 'home'));
+}
 
-    if(document.activeElement)
-        document.activeElement.blur();
-
-    // Why do you hate me?
-    setTimeout(function() {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-        });
-    }, 1);
+function goHome()
+{
+    update('home');
+    window.scrollTo(0, 0);
 }
 
 links.forEach(l => l.addEventListener('click', e => {
