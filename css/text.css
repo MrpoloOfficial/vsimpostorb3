@@ -63,11 +63,12 @@ p {
 }
 
 .text-creator {
-    font-family: 'Trebuchet MS';
-    font-size: calc(var(--text-font-size) - 6px);
+    /* font-family: 'Trebuchet MS'; */
+    font-size: calc(var(--text-font-size) - 8px);
+    margin-top: 8px;
     letter-spacing: 2px;
     text-align: center;
-    color: #cfcfcf;
+    color: #838383;
 }
 
 a {

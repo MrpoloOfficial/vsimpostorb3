@@ -15,9 +15,9 @@ function update(id)
         history.pushState(null, '', '#' + (id || 'home'));
 }
 
-function goHome()
+function scrollUp()
 {
-    update('home');
+    // update('home');
     window.scrollTo(0, 0);
 }
 
