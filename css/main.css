@@ -123,6 +123,10 @@ header {
     max-width: 100%;
 }
 
+.button:hover {
+	text-decoration: none;
+}
+
 .button.active {
     color: #000000;
     background-color: #ffffff;
