@@ -1,0 +1,37 @@
+/* I KNOW THIS LOOKS UGLY, ILL IMPROVE IT LATER */
+
+.text-red { color: red; }
+.text-center { text-align: center; }
+.text-bold { font-weight: bolder; }
+.text-small-gray { font-size: 16px; text-align: center; color: gray; }
+.link-blue { color: cornflowerblue; }
+.text-yellow { color: yellow; }
+.text-light-gray { color: #c2c2c2; }
+.text-pink { color: rgb(207, 82, 186); }
+.text-purple { color: rgb(153, 119, 153); }
+.text-52 { font-size: 52px; }
+.text-46 { font-size: 46px; }
+.text-yellow-bold-uppercase { color: yellow; font-weight: bold; text-transform: uppercase; }
+.text-uppercase-none { text-transform: none; }
+
+.mt-neg6 { margin-top: -6px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-neg20 { margin-bottom: -20px; }
+
+.box-content-gap { gap: 24px; padding-right: 24px; }
+.box-content-left { justify-content: left; }
+
+.content-center img {
+    max-width: 100%;
+}
+
+.home-gang-image { height: auto; max-width: 100%; width: 425px; transform: scale(120%); }
+.icon-rotate-right { margin-right: -10px; margin-top: 14px; transform: rotate(24deg); }
+.icon-rotate-left { margin-left: -10px; margin-top: 14px; transform: rotate(-16deg); }
+.scale-110 { transform: scale(110%); }
+.scale-115 { transform: scale(115%); }
+
+.devlog-subtitle { margin-bottom: 16px; text-transform: capitalize; letter-spacing: 4px; }
+.devlog-box-bg { background-color: #586b584f; }
+
+.screenshot { width: 725px; max-width: 100%; }

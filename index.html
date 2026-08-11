@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Ugly looking but, i dont want the stars to look weird -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>VS IMPOSTOR B3</title>
     <meta name="author" content="HighTideHQ">
     <meta name="description" content="The official website for IMPOSTOR B3.">
-
     <link rel="icon" type="image/svg+xml" href="assets/images/gang/icons/lime.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/gang/icons/lime.png">
     <link rel="apple-touch-icon" href="assets/images/gang/icons/lime.png">
@@ -21,13 +16,13 @@
     <link href="css/text.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/clouds.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/bgStars.css" rel="stylesheet" type="text/css" media="all">
-</head>
+    <link href="css/extras.css" rel="stylesheet" type="text/css" media="all">
 
+</head>
 <body>
     <div class="background">
         <div id="BgStars1" class="BgStarLayer"><div></div><div></div></div>
         <div id="BgStars2" class="BgStarLayer"><div></div><div></div></div>
-
         <div class="cloud-scroll">
             <div class="cloud-track">
                 <img class="cloud" id="cloud-1" src="assets/images/clouds/cloud1.png" alt="Cloud">
@@ -39,14 +34,11 @@
             </div>
         </div>  
     </div>
-
     <header>
         <div class="header-logo">
             <img src="assets/images/logo.png" width="600" alt="IMPOSTOR B3 LOGO">
         </div>
-
         <br>
-
         <nav class="header-nav">
             <a href="#home" class="button">Home</a>
             <a href="#downloads" class="button">Downloads</a>
@@ -55,34 +47,31 @@
             <a href="#devlog" class="button">Devlogs</a>
         </nav>
     </header>
-
     <br><br>
-
     <section data-section="404">
         <div class="scaledDiv">
-            <p class="text-large" style="color: red;">ERROR 404!</p>
+            <p class="text-large text-red">ERROR 404!</p>
             <p class="text-normal">PAGE NOT FOUND</p>
             <br>
-            <img src="assets/images/gifs/brown-wip.gif" class="brown" alt="Brown Walker WIP" >
-            <p class="text-normal" style="text-align: center;">
-                <span style="font-weight: bolder;">OOPS!</span> you seem to be a bit lost, aren't you?
+            <img src="assets/images/gifs/brown-wip.gif" class="brown" alt="Brown Walker WIP">
+            <p class="text-normal text-center">
+                <span class="text-bold">OOPS!</span> you seem to be a bit lost, aren't you?
                 <br>
                 Click the button below or use the buttons above to head back to existing pages!
             </p>
             <br>
-            <div style="text-align: center;">
+            <div class="text-center">
                 <a href="#home" onclick="scrollUp();" class="button">Back to Home</a>
             </div>
         </div>
         <br>
     </section>
-
     <section data-section="home">
         <div class="main">
             <div class="box">
-                <div class="box-content" style="gap: 24px; padding-right: 24px">
+                <div class="box-content box-content-gap">
                     <div>
-                        <p class="text-normal" style="text-align: center;">
+                        <p class="text-normal text-center">
                             Welcome to VS IMPOSTOR B3's Official website!
                             <br>
                             This website functions as an all-purpose hub for VS IMPOSTOR B3 information and downloads.
@@ -95,55 +84,49 @@
                             <br><br>
                             Enjoy your stay!!!
                         </p>
-                        <p class="text-normal" style="font-size: 16px; text-align: center; color:gray;">- HIGHTIDE</p>
+                        <p class="text-normal text-small-gray">- HIGHTIDE</p>
                     </div>
-                    
-                    <img src="assets/images/gang/fullgang.png" style="height: auto; width: 425px; transform: scale(120%);" alt="">
+                    <img src="assets/images/gang/fullgang.png" class="home-gang-image" alt="">
                 </div>
             </div>
         </div>
     </section>
-
     <section data-section="downloads">
         <div class="scaledDiv">
             <p class="text-large">
                 DOWNLOADS...?
             </p>
             <br>
-            <img src="assets/images/gifs/brown-wip.gif" class="brown" alt="Brown Walker WIP" >
-            <p class="text-normal" style="text-align: center;">
+            <img src="assets/images/gifs/brown-wip.gif" class="brown" alt="Brown Walker WIP">
+            <p class="text-normal text-center">
                 Builds will be available here soon.
                 <br>
-                Check out our <a href="https://x.com/B3Impostor" style="color: cornflowerblue;">Twitter/X</a> for new updates and information about the mod.
+                Check out our <a href="https://x.com/B3Impostor" class="link-blue">Twitter/X</a> for new updates and information about the mod.
                 <br>
                 Stay tuned!
             </p>
         </div>
         <br>
     </section>
-
     <section data-section="characters">
         <div class="main">
-
             <div class="content-flex">
-                <img src="assets/images/gang/icons/b3.png" height="100" style="margin-right: -10px; margin-top: 14px; transform: rotate(24deg);" alt="B3 Icon">
+                <img src="assets/images/gang/icons/b3.png" height="100" class="icon-rotate-right" alt="B3 Icon">
                 <p class="text-large">
                     CHARACTERS
                 </p>
-                <img src="assets/images/gang/icons/lime.png" height="100" style="margin-left: -10px; margin-top: 14px; transform: rotate(-16deg);" alt="Lime Icon">
+                <img src="assets/images/gang/icons/lime.png" height="100" class="icon-rotate-left" alt="Lime Icon">
             </div>
-            <p class="text-normal" style="text-align: center; margin-top: -6px;">Get to know them!</p>
-
+            <p class="text-normal text-center mt-neg6">Get to know them!</p>
             <br><br>
-
             <div class="box">
                 <div class="box-content box-content-reversed">
-                    <img src="assets/images/gang/couple.png" style="transform: scale(110%);" alt="B3 and SHAYA!">
+                    <img src="assets/images/gang/couple.png" class="scale-110" alt="B3 and SHAYA!">
                     <div>
-                        <p class="text-title" style="text-align: center;">B3 and Shaya Dearest!</p>
-                        <p class="text-highlight" style="text-align: center;">Thx B3GF ily<3</p>
+                        <p class="text-title text-center">B3 and Shaya Dearest!</p>
+                        <p class="text-highlight text-center">Thx B3GF ily<3</p>
                         <br>
-                        <p class="text-description" style="text-align: center;">
+                        <p class="text-description text-center">
                             A madly in love couple who love to sing songs, they are the main playable characters in the mod! expect to see ALOT of them throughout the entirety of Vs Impostor B3!
                         </p>
                         <br>
@@ -151,17 +134,15 @@
                     </div>
                 </div>
             </div>
-
             <br><br>
-
             <div class="box">
                 <div class="box-content">
                     <img src="assets/images/gang/lime.png" alt="LIME">
                     <div>
-                        <p class="text-title" style="text-align: center; font-size: 52px;">Lime</p>
-                        <p class="text-highlight" style="text-align: center;">Whats up Dawg?</p>
+                        <p class="text-title text-center text-52">Lime</p>
+                        <p class="text-highlight text-center">Whats up Dawg?</p>
                         <br>
-                        <p class="text-description" style="text-align: center;">
+                        <p class="text-description text-center">
                             The lead antagonist of Week 1's "Oceana Occurrence" as well as Yellows partner!
                             <br>
                             Annoying, greedy, and... quite silly. 
@@ -169,17 +150,15 @@
                     </div>
                 </div>
             </div>
-
             <br><br>
-
             <div class="box">
                 <div class="box-content box-content-reversed">
-                    <img src="assets/images/gang/yellow.png" style="transform: scale(110%);" alt="YELLOW">
+                    <img src="assets/images/gang/yellow.png" class="scale-110" alt="YELLOW">
                     <div>
-                        <p class="text-title" style="text-align: center; font-size: 52px;">Yellow</p>
-                        <p class="text-highlight" style="text-align: center;">You're fragile... like a flower...</p>
+                        <p class="text-title text-center text-52">Yellow</p>
+                        <p class="text-highlight text-center">You're fragile... like a flower...</p>
                         <br>
-                        <p class="text-description" style="text-align: center;">
+                        <p class="text-description text-center">
                             The lead antagonist of the future Week 2's "Mana Mania" as well as Limes partner!
                             <br>
                             Sweet and soft... be wary of his thorns.. 
@@ -187,17 +166,15 @@
                     </div>
                 </div>
             </div>
-
             <br><br>
-
             <div class="box">
                 <div class="box-content">
-                    <img src="assets/images/gang/purple.png" style="transform: scale(115%);" alt="Purple">
+                    <img src="assets/images/gang/purple.png" class="scale-115" alt="Purple">
                     <div>
-                        <p class="text-title" style="text-align: center; font-size: 46px; color: rgb(153, 119, 153);">Purple</p>
-                        <p class="text-highlight" style="text-align: center;">...</p>
+                        <p class="text-title text-center text-46 text-purple">Purple</p>
+                        <p class="text-highlight text-center">...</p>
                         <br>
-                        <p class="text-description" style="text-align: center;">
+                        <p class="text-description text-center">
                             A machine of malice, with no heart, it knows one thing. terminate.
                         </p>
                     </div>
@@ -206,26 +183,19 @@
         </div>
         <br>
     </section>
-
-    <section data-section="devlogs/1">
+    <section data-section="devlog1">
         <div class="main">
             <div class="box">
                 <div class="content-center">
-                    <p class="text-title" style="text-align: center;">B3 DEVLOG #1</p>
+                    <p class="text-title text-center">B3 DEVLOG #1</p>
                     <p class="text-smallest">AUGUST 12, 2026</p>
                     <br>
-                
                     <br>
-
                     <img src="assets/images/devlogs/log1/lime.png" width="250" alt="Hey it's me! happy lime!">
                     <p class="text-creator">(Made by @NovaArtistXD)</p>
-
                     <br><br>
-
-                    <p class="text-large" style="color:yellow; font-weight: bold; text-transform: uppercase;">Whats up dawg?</p>
-
+                    <p class="text-large text-yellow-bold-uppercase">Whats up dawg?</p>
                     <br>
-
                     <div class="devlog-person-box content-center">
                         <p class="text-normal">
                             Hello there! Nova here, director of HIGHTIDE!
@@ -237,18 +207,12 @@
                             and this dev log! to inform you on upcoming vs impostor b3 stuffs,... ill update it every once in a while! enjoy this newsletter!
                         </p>
                     </div>
-
                     <br><br>
-
-                    <p class="text-large" style="color:yellow; font-weight: bold; text-transform: uppercase;">2026 Release!?</p>
-
+                    <p class="text-large text-yellow-bold-uppercase">2026 Release!?</p>
                     <br>
-
                     <img src="assets/images/devlogs/log1/yellow.png" width="250" alt="Hey it's me! happy yellow!">
                     <p class="text-creator">(Made by @NovaArtistXD)</p>
-
                     <br>
-
                     <div class="devlog-person-box content-center">
                         <p class="text-normal">
                             YES!! we are planning to release THIS YEAR! progress has been going great, and i am very confident about that!
@@ -259,40 +223,31 @@
                             heres a sneak peak on one of them bellow..
                         </p>
                     </div>
-
                     <br>
-
-                    <p class="text-normal" style="margin-bottom: 16px; text-transform: capitalize; letter-spacing: 4px;">???</p>
-                    <audio controls>
-                        <source src="assets/music/titlur-b3-inst-teaser.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+                    <p class="text-normal devlog-subtitle">???</p>
+                    <div class="content-flex">
+                        <img src="assets/images/devlogs/audio-mic.png" style="height: auto; width: 100px;" alt="Audio's Microphone">
+                        <audio controls>
+                            <source src="assets/music/titlur-b3-inst-teaser.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                     <p class="text-creator">(Composed by Daxie)</p>
-
                     <br><br>
-
-                    <p class="text-normal" style="text-align: center;">
+                    <p class="text-normal text-center">
                         There will also be very cool custom menus!
                         <br>
                         For example, here's a look at our new main menu!
                     </p>
-
                     <br><br>
-
-                    <img src="assets/images/screenshots/main-menu.png" width="725" alt="Main Menu Teaser">
+                    <img src="assets/images/screenshots/main-menu.png" class="screenshot" alt="Main Menu Teaser">
                     <p class="text-creator">(VISUALS MAY NOT BE FINAL)</p>
-
                     <br><br>
-
-                    <p class="text-large" style="color:yellow; font-weight: bold; text-transform: uppercase;">The Sussin Direct?</p>
-
+                    <p class="text-large text-yellow-bold-uppercase">The Sussin Direct?</p>
                     <br>
-
                     <img src="assets/images/devlogs/log1/purple.png" width="250" alt="Hey it's me! the big purple chud!">
                     <p class="text-creator">(Made by @NovaArtistXD)</p>
-
                     <br>
-
                     <div class="devlog-person-box content-center">
                         <p class="text-normal">
                             We have the great honor to be part of the new and improved, sussin direct!
@@ -304,18 +259,12 @@
                             more info on this on a later newsletter! or youll hear from the sussin direct team themselves when they start their promo run! or.. the trailer itself. dunno. :p
                         </p>
                     </div>
-
                     <br><br>
-
-                    <p class="text-large" style="color:yellow; font-weight: bold; text-transform: uppercase;">Thank you!</p>
-
+                    <p class="text-large text-yellow-bold-uppercase">Thank you!</p>
                     <br>
-
                     <img src="assets/images/devlogs/log1/highfrog.png" width="400" alt="The Shark">
                     <p class="text-creator">(Made by @NovaArtistXD)</p>
-
                     <br>
-
                     <div class="devlog-person-box content-center">
                         <p class="text-normal">
                             THANK YOU SO MUCH!
@@ -328,27 +277,23 @@
                             <br><br>
                             thank you! catch ya later dawg!
                             <br>
-                            - <span style="color: rgb(207, 82, 186);">Nova</span>
+                            - <span class="text-pink">Nova</span>
                         </p>
                     </div>
-
                 </div>
-
                 <br>
-
-                <div style="text-align: center;">
+                <div class="text-center">
                     <a href="#devlog" onclick="scrollUp();" class="button">Go Back</a>
                 </div>
             </div>
         </div>
         <br>
     </section>
-
     <section data-section="devlog">
         <div class="main">
             <div class="box">
-                <p class="text-title" style="color: yellow; text-align: center; margin-bottom: 10px;">MORE CONTENT?</p>
-                <p class="text-normal content-center" style="color: #c2c2c2; text-align: center; width: 90%;">
+                <p class="text-title text-yellow text-center mb-10">MORE CONTENT?</p>
+                <p class="text-normal content-center text-center text-light-gray" style="width: 90%;">
                     Interested in the process of the mod?
                     looking to learn more about the progress?
                     <br>
@@ -357,80 +302,65 @@
                     <br>
                 </p>
                 <br>
-                <p class="text-large" style="text-align: center;">DEVLOGS!</p>
-
+                <p class="text-large text-center">DEVLOGS!</p>
                 <br>
-
-                <div onclick="window.location.href='#devlogs/1'; scrollUp();" class="box-content devlog-box" style="background-color: #586b584f;">
+                <div onclick="window.location.href='#devlog1'; scrollUp();" class="box-content devlog-box devlog-box-bg">
                     <img src="assets/images/devlogs/Coin1.png" style="height: auto; width: 250px;" alt="Devlog Coin 1">
                     <div>
                         <p class="text-title">Devlog #1</p>
-                        <p class="text-smallest">Behind the scenes! - August 12, 2026</p>
+                        <p class="text-smallest">The First One! - August 12, 2026</p>
                         <hr class="horiz-line">
                         <p class="text-description">
-                            Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            Hey Nova could you also write something here too? i would write something here myself
+                            but i am NOT a writer and i suck at explaining ANYTHING.
+                            <br>
+                            thanks.
                         </p>
                     </div>
                 </div>
-
                 <br><br><br>
-
-                <p class="text-smallest" style="text-align: center;">Oof...</p>
-                <p class="text-smallest" style="text-align: center; text-transform: none;">It seems there's no more devlogs to be found!</p>
-                <p class="text-smallest" style="text-align: center; margin-bottom: -20px; text-transform: none;">But it's okay! more devlogs will be added when we feel like it, so just relax and wait!</p>
+                <p class="text-smallest text-center">Oof...</p>
+                <p class="text-smallest text-center text-uppercase-none">It seems there's no more devlogs to be found!</p>
+                <p class="text-smallest text-center text-uppercase-none mb-neg20">But it's okay! more devlogs will be added when we feel like it, so just relax and wait!</p>
             </div>
         </div>
         <br>
     </section>
-
     <section data-section="credits">
         <div class="main">
             <div class="box content-center">
-                <p class="text-highlight" style="text-align: center;">WHAT IS HIGHTIDE?</p>
-                <p class="text-title" style="text-align: center;">An fnf mod team, duh!</p>
+                <p class="text-highlight text-center">WHAT IS HIGHTIDE?</p>
+                <p class="text-title text-center">An fnf mod team, duh!</p>
                 <br>
                 <img src="assets/images/logo-hightide.png" alt="IMPOSTOR B3 LOGO" width="85%">
                 <br>
-                <p class="text-description" style="text-align: center;">
+                <p class="text-description text-center">
                     Hightide is the name of our production team! currently, we're working on a 
                     <br>
                     Vs Impostor fan-mod Called B3 impostor! more updates coming soon!
                 </p>
             </div>
-
             <br><br>
-
             <div class="box">
-                <div class="box-content" style="justify-content: left;">
+                <div class="box-content box-content-left">
                     <div>
                         <p class="text-credit-title">HIGHTIDE TEAM</p>
-
-                        <!-- <p class="text-credit-role">ROLE TEXT</p> -->
                         <p class="text-credit-person">Nova - Owner, Director, Lead Charter, Concept Artist</p>
                         <p class="text-credit-person">Jessexdee (BIG J) - Co-Director, Lead Artist, Animator</p>
-                        
                         <p class="text-credit-person">TheBlueGrunt - Lead Animator, Concept Artist</p>
-
                         <p class="text-credit-person">Clappers46 - Lead Musician</p>
                         <p class="text-credit-person">Cencory - Musician</p>
                         <p class="text-credit-person">Daxie - Musician</p>
                         <p class="text-credit-person">BayckieBay - Musician</p>
-
                         <p class="text-credit-person">Lou - Coder, Voice of Shaya.</p>
                         <p class="text-credit-person">Mr. Polo - Coder, Website Coder (I'm getting fired)</p>
-
                         <br>
-
                         <p class="text-credit-title">TRAILER STAFF</p>
                         <p class="text-credit-person">Mixman - Director of Trailer, Artist, Animator  (Voice of Detective)</p>
                         <p class="text-credit-person">Bluey - Artist, Animator</p>
                         <p class="text-credit-person">Kdead - Artist, Animator</p>
                         <p class="text-credit-person">Collusiam - Video Editor</p>
-
                         <br>
-
                         <p class="text-credit-title">SPECIAL THANKS</p>
                         <p class="text-credit-person">The old SUSWAVES team (i thank you all for your hard work)</p>
                         <p class="text-credit-person">Biddle3 and Studio Breakbeat</p>
@@ -447,21 +377,17 @@
                         <p class="text-credit-person">Birstondog11 (???)</p>
                         <p class="text-credit-person">Jio (random kid)</p>
                         <p class="text-credit-person">DW64 (my bf :3)</p>
-
                         <br>
-
                         <p class="text-credit-person">and YOU! for checking out our project! thank youu!!! </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <br>
-
     <footer class="footer">
         <div>
-            <p class="text-smallest" style="text-align: center;">
+            <p class="text-smallest text-center">
                 Among Us © Innersloth LLC.
                 <br>
                 Friday Night Funkin’ © The Funkin’ Crew Inc.
@@ -476,9 +402,7 @@
             </p>
         </div>
     </footer>
-
     <script src="scripts/bgStars-handler.js"></script>
     <script src="scripts/sections-handler.js"></script>
 </body>
-
 </html>
