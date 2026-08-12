@@ -98,6 +98,18 @@ a:hover {
         font-size: calc(var(--text-font-size) - 6px);
         line-height: 1.5;
     }
+
+    .text-credit-title {
+        font-size: calc(var(--text-font-size) + 2px);
+    }
+
+    .text-credit-role {
+        font-size: var(--text-font-size);
+    }
+
+    .text-credit-person {
+        font-size: calc(var(--text-font-size) - 8px);
+    }
 }
 
 @media (max-width: 480px) {
