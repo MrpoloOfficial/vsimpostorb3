@@ -58,8 +58,14 @@ function scrollUp()
 
 function updateAllMedia()
 {
-    document.querySelectorAll('video').forEach(v => v.pause());
-    document.querySelectorAll('audio').forEach(a => a.pause());
+    document.querySelectorAll('video').forEach(v => {
+        v.pause()
+    });
+
+    document.querySelectorAll('audio').forEach(a => {
+        a.pause()
+    });
+
     document.querySelectorAll('iframe[src*="youtube"]').forEach(iframe =>
     {
         var section = iframe.closest('section[data-section]');
@@ -79,5 +85,7 @@ function fixYoutubeIframe(sectionId) // im tired and this is stuuuuupppppppiiiii
     if(!activeSection) return;
 
     var iframes = activeSection.querySelectorAll('iframe[src="about:blank"][data-original-src]');
-    iframes.forEach(iframe => iframe.src = iframe.dataset.originalSrc);
+    iframes.forEach(iframe => {
+        iframe.src = iframe.dataset.originalSrc
+    });
 }
