@@ -1,30 +1,52 @@
-var sections = document.querySelectorAll('section');
-var links = document.querySelectorAll('a[href^="#"]');
 
-// soo vsimpostor.com like woah!!!!!!
 
-function update(id)
+document.addEventListener('DOMContentLoaded', function()
 {
-    var target = document.querySelector('section[data-section="' + (id || 'home') + '"]')
-        || document.querySelector('section[data-section="home"]');
+    var sectionIDs = ['home', 'downloads', 'characters', 'credits', 'devlog', 'devlogs/devlog1', '404'];
+    var container = document.getElementById('sections-container');
 
-    sections.forEach(s => s.classList.toggle('active', s === target));
-    links.forEach(l => l.classList.toggle('active', l.hash === '#' + (id || 'home')));
+    var loadedCount = 0;
 
-    if(location.hash !== '#' + (id || 'home')) 
-        history.pushState(null, '', '#' + (id || 'home'));
+    sectionIDs.forEach(id =>
+    {
+        fetch(`sections/${id}.html`)
+            .then(response => response.text())
+            .then(html =>
+            {
+                container.insertAdjacentHTML('beforeend', html);
+                loadedCount++;
+
+                if(loadedCount === sectionIDs.length)
+                    setupSectionSwitcher();
+            })
+            .catch(err => console.warn('Failed to load section:', id)); // shouldn't happen unless you're... STUPID
+    });
+});
+
+function setupSectionSwitcher()
+{
+    function showSection(id)
+    {
+        var targetId = id || 'home';
+
+        document.querySelectorAll('section[data-section]').forEach(section => {
+            var isActive = (section.dataset.section === targetId);
+            section.classList.toggle('active', isActive);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(link => { // GRAHHHHHH
+            var isActive = (link.hash === '#' + targetId);
+            link.classList.toggle('active', isActive);
+        });
+    }
+
+    showSection(window.location.hash.slice(1) || 'home');
+    window.addEventListener('hashchange', function() {
+        showSection(window.location.hash.slice(1) || 'home');
+    });
 }
 
 function scrollUp()
 {
-    // update('home');
     window.scrollTo(0, 0);
 }
-
-links.forEach(l => l.addEventListener('click', e => {
-    e.preventDefault();
-    update(l.hash.slice(1));
-}));
-
-addEventListener('hashchange', () => update(location.hash.slice(1) || 'home'));
-update(location.hash.slice(1) || 'home');

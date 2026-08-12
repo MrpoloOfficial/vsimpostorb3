@@ -15,7 +15,7 @@ function scrollBg()
 {
     starLayers.forEach(layer =>
     {
-        var isMobile = window.matchMedia('(max-width: 768px)').matches;
+        var isMobile = window.matchMedia('(max-width: 768px)').matches; // isSmallerDevice whatever
         var speedMult = isMobile ? 4 : 1;
 
         layer.progress += layer.speed * speedMult;

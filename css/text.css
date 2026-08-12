@@ -71,6 +71,15 @@ p {
     color: #838383;
 }
 
+.audio-text-title {
+    font-size: var(--text-font-size);
+    color: var(--main-text-color);
+    margin-bottom: 16px;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+}
+
+
 a {
     text-decoration: none;
 }
